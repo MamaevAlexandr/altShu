@@ -1,5 +1,6 @@
 body{
     font-family:'Epilogue', 'Inter', 'Roboto' ;
+    overflow-x: hidden;
 }
 
 main {
@@ -182,6 +183,9 @@ main {
     color:aqua;
     transition-duration: 1s;
 }
+.develop__right-img {
+    width: 100%;
+}
 
 /*====================ABOUT=======================*/
 
@@ -314,7 +318,7 @@ main {
 }
 /* ================================= */
 
-/* Work */
+/* ===================Work ====================*/
 
 .work__rep{
     width: 80rem;
@@ -361,22 +365,25 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 80px 0 0 0;
-    height: 467px;
+    height: 29.1875rem;
 }
 .work__rep-myworkLook {
     font-family: 'Inter';
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 28px;
-    max-width: 408px;
-    max-height: 30px;
+    max-width: 25.5rem;
+    max-height: 1.875rem;
 }
 .work__rep-mywork-txt{
     font-family: 'Inter';
     font-size: 1.5rem;
-    line-height: 28px;
-    height: 100px;
-    max-width:300px;
+    line-height: 1.75rem;
+    height: 6.25rem;
+    max-width:18.75rem;
+}
+.work__rep-myworkLeft-img {
+    width: 100%;
 }
 
 .work__rep-mywork-aboutSome {
@@ -387,7 +394,8 @@ main {
 }
 
 .work__rep-mywork-some-water{
-    width: 39rem;
+    width: 100%;
+    max-width: 39rem;
     height: 41.5625rem;
     object-fit: cover;
 }
@@ -452,6 +460,7 @@ main {
     line-height: 28px;
 }
 .work__rep-htmlCss {
+    width: 100%;
     max-width: 32rem;
     max-height: 31.5625rem;
 }
@@ -504,11 +513,11 @@ main {
 
 .footer{
     width: 100%;
-    /*height: 45.6875rem;*/
+    height: 45.6875rem;
     background: #010032;
 }
 .footer__header {
-    margin: 102px 0 0 16%;
+    margin: 102px 0 0 27%;
     display: flex;
     width: 180px;
     height: 15px;
@@ -518,6 +527,7 @@ main {
 
 .footer__logo-img{
     margin: 0 0 4px 0;
+    color: white;
 }
 .foooter__hedaer-cont {
     font-family: 'Epilogue';
@@ -529,28 +539,33 @@ main {
 }
 
 .footer__heavlets {
-    width: 80rem;
-    height: 96px;
+    width: 121rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 102px 0 0 16%;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    margin: 102px 0 0 27%;
+    max-width: 100%;
 }
 .footer__heavlet-heva {
-    max-width: 100%;
+    width: 48.4375rem;
+    height: 4.125rem;
     font-family: 'Epilogue';
-    font-size: 66px;
+    font-size: 55px;
     line-height: 66px;
     font-weight: 400;
     color: white;
 }
 .footer__heavlets-lets {
-    max-width: 100%;
+    width: 27.1875rem;
+    height: 4.125rem;
     font-family: 'Epilogue';
-    font-size: 60px;
+    font-size: 50px;
     line-height: 66px;
     font-weight: 400;
     color:#39D7BA;
+    margin: 0 37.5rem 0 0;
 }
 
 .footer__form {
@@ -558,7 +573,7 @@ main {
     justify-content: space-between;
     width: 80rem;
     height: 275px;
-    margin: 0 auto;
+    margin: 0 0 0 27%;
 }
 .footer__form-mail-ff {
     width: 220px;
@@ -616,30 +631,30 @@ input:active{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 460px;
-    height: 91px;
+    width: 28.75rem;
+    height: 5.6875rem;
 }
 
 .footer__subcribe-text {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #FFFFFF;
 }
 
 .footer__subcribe-pole {
-    width: 290px;
-    height: 48px;
+    width: 18.125rem;
+    height: 3rem;
     border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 240px;
     background: #010032;
     color: white;
 }
 .footer__subcribe-btm {
-    width: 140px;
-    height: 48px;
+    width: 8.75rem;
+    height: 3rem;
     background: #48898D;
     border-radius: 24px;
 }
@@ -649,7 +664,7 @@ input:active{
 }
 .authof__design {
     width: 121rem;
-    height: 44px;
+    height: 2.75rem;
     margin: 0 auto;
 }
 .authof__design-polosa {
@@ -660,12 +675,17 @@ input:active{
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #FFFFFF;
 }
 
-@media screen and (max-width:1460px) {
+/*====================== ADAPTIV ===========================*/
+
+@media (max-width:1460px) {
+    body { 
+        overflow-x: hidden;
+    }
     .Block-Develop{
         width: 100%;
     }
@@ -676,6 +696,21 @@ input:active{
         width: 100%;
         flex-wrap: wrap;
     }
+    .work__rep-mywork-aboutSome-btm {
+        margin: 0 0 30px 0
+    }
+    .footer__heavlets {
+        margin: 15px 0 0 27%;
+    }
+    .footer__form {
+        margin: 20px 0 0 27%;
+    }
+    .footer__subcribe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 15px 0 0;
+    }
 }
 
 @media (max-width:1400px) {
@@ -685,8 +720,13 @@ input:active{
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .develop__right-img {
+        margin: 20px 0 0 0;
+    }
 }
-@media (width:1024px) {
+
+
+@media (max-width:1024px) {
     .about__dev {
         display: flex;
         flex-wrap: wrap;
@@ -706,7 +746,100 @@ input:active{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .work__rep-myworkLeft {
-        max-width: 50%;
+    .work__rep-myworkLeft-img {
+        width: 50%;
+    }
+    .work__rep-mywork-aboutSome{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .work__rep-mywork-some {
+        margin: -170px 0 0 0;
+    }
+    .work__rep-mywork-some-water {
+        width: 50%;
+    }
+
+    .work__rep-mywork-about {
+        margin: 20px 0 0 0;
+    }
+    .work__rep-ui {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    .work__rep-ui-ux {
+        display: none;
+    }
+    .work__rep-htmlCss{
+        width: 25%;
+    }
+    .work__rep-mywork-aboutSome-btm {
+        margin: 85px 0 0 30px;
+    }
+
+    .footer{
+        margin: 400px 0 0 0;
+    }
+    .footer__heavlets {
+        display: none;
+    }
+    .footer__form {
+        margin: 20px 0 0 15%;
+    }
+}
+
+@media (max-width:960px) {
+    .block_name {
+        display: none;
+    }
+    .cubock {
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .footer{
+        display: none;
+    }
+    .footer__form {
+        display: none;
+    }
+    .authof__design {
+        display: none;
+    }
+}
+@media (max-width:560px) {
+    .nav {
+        display: none;
+    }
+    .idevelop__info {
+        margin: 0 auto;
+    }
+    .idevelop__left-block{
+        width: 100%;
+    }
+    .idevelop__present{
+        margin: 0 auto;
+    }
+    .idevelop__rightblock{
+        display: none;
+    }
+    .about__block-right {
+        display: none;
+    }
+    .work__rep {
+        margin: 0 auto;
+    }
+    .work__rep-mywork {
+        margin: 35px 0 0 -165px;
+    }
+    .work__rep-head {
+        display: none;
     }
 }
