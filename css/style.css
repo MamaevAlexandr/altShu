@@ -66,7 +66,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 80px 0 0;
+    /* margin: 0 80px 0 0; */
+    padding: 0 80px 0 0;
 }
 .head1px {
     width: 25px;
@@ -322,8 +323,8 @@ main {
 
 .work__rep{
     width: 80rem;
-    height: 177.5rem;
-    margin: 144px 80px 0;
+    /*height: 177.5rem;*/
+    margin: 9rem 5rem 0;
     flex-wrap: wrap;
 }
 .work__rep-name{
@@ -595,6 +596,9 @@ input:active{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 76px;
     height: 215px;
 }
@@ -612,6 +616,10 @@ input:active{
 }
 
 .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     width: 80px;
     height: 215px;
 }
@@ -666,6 +674,7 @@ input:active{
     width: 121rem;
     height: 2.75rem;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .authof__design-polosa {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -736,15 +745,23 @@ input:active{
         margin: 30px 0 0 0;
     }
     .work__rep {
+        width: 100%;
+        max-width: 1024px;
         display: flex;
         flex-wrap: wrap;
-        margin: 50px 0 0 85px;
+        /* margin: 50px 0 0 85px; */
+    }
+    .work__rep-head {
+        display: none;
     }
     .work__rep-mywork {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .work__rep-myworkRight {
+        width: 100%;
     }
     .work__rep-myworkLeft-img {
         width: 50%;
@@ -753,9 +770,13 @@ input:active{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
+        max-width: 1024px;
+        display: none;
     }
     .work__rep-mywork-some {
         margin: -170px 0 0 0;
+        display: none;
     }
     .work__rep-mywork-some-water {
         width: 50%;
@@ -763,6 +784,7 @@ input:active{
 
     .work__rep-mywork-about {
         margin: 20px 0 0 0;
+        display: none;
     }
     .work__rep-ui {
         margin: 20px 0 0 0;
@@ -781,7 +803,7 @@ input:active{
     }
 
     .footer{
-        margin: 400px 0 0 0;
+        margin: 25rem 0 0 0;
     }
     .footer__heavlets {
         display: none;
@@ -804,7 +826,42 @@ input:active{
     body {
         overflow-x: hidden;
     }
-    .footer{
+    .nav {
+        display: none;
+    }
+    .idevelop-write{
+        padding: 0 0 15px 0;
+    }
+    .develop__right-img{
+        display: none;
+    }
+    .about__block-right{
+        margin: 0 auto;
+    }
+    .work__rep {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        padding: 0 0 0 85px;
+        max-width: 768px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .footer {
+        margin: 0 auto;
+    }
+    .footer__form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 0 0 30px;
+    }
+    
+    /* .footer{
         display: none;
     }
     .footer__form {
@@ -812,13 +869,27 @@ input:active{
     }
     .authof__design {
         display: none;
-    }
+    } */
 }
 @media (max-width:560px) {
+    .idevelop__info{
+        overflow-x: hidden;
+    }
     .nav {
         display: none;
     }
+    .idevelop__present{
+        width: 100%;
+    }
     .idevelop__info {
+        padding: 0 0 0 5px;
+    }
+    .idevelop__txt{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .idevelop-write {
+        padding: 0 0 15px 0;
         margin: 0 auto;
     }
     .idevelop__left-block{
@@ -833,13 +904,94 @@ input:active{
     .about__block-right {
         display: none;
     }
+    
     .work__rep {
+        width: 100%;
         margin: 0 auto;
     }
     .work__rep-mywork {
-        margin: 35px 0 0 -165px;
+        margin: 30px auto;
+    }
+    .work__rep-myworkRight{
+        margin:10px 0 0 0;
+    }
+    .work__rep-mywork-txt{
+        margin: 30px 0 0 0;
+    }
+    .work__rep-mywork-aboutSome{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .work__rep-mywork-some{
+        width: 100%;
+    }
+    .work__rep-mywork-about{
+        width: 100%;
+    }
+    .work__rep-mywork-about-mac{
+        width: 100%;
+    }
+    .work__rep-mywork-aboutSome-btm {
+        margin: 20px auto;
+        padding: 0 25px 0px 0px;
+    }
+    
+    .work__rep-ui{
+        display: none;
     }
     .work__rep-head {
         display: none;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer__header {
+        margin: 0 auto;
+    }
+    .footer__nav-txt{
+        width: 100%;
+        overflow-x:hidden ;
+    }
+    .footer__form{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__social{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 0 0 150px;
+    }
+    .authof__design{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .authof__design-polosa{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .footer__subcribe{
+        display: none;
+    }
+    .footer__form-mail{
+        display: none;
+    }
+}
+
+@media (max-width:414px) {
+    .about__anastasia-name {
+        margin: 200px 0 0 0 ;
+    }
+    .work__rep {
+        margin: 200px 0 0 0 ;
     }
 }
