@@ -64,9 +64,33 @@
                     </div>
 
                     <div class="idevelop-write">
-                        <button class="idevelop__btm">Write me!
+                        <button id="myBtn" class="idevelop__btm">Write me! 
                             <img class="idevelo-write-img" src="./img/mail.svg" alt="mail">
                         </button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form class="form_txt">
+                                    <h2> Отзыв</h2>
+                                    <div class="form_otstup">
+                                    <input class="form__inpt" type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="form_otstup">
+                                    <input class="form__inpt"  type="number" placeholder="Телефон">
+                                    </div>
+                                    <div class="form_otstup">
+                                    <input class="form__inpt" type="email" placeholder="Email">
+                                    </div>
+                                    
+                                    <textarea></textarea>
+                                    
+                                    <button class="btn__form">Отправить</button>
+
+                                    
+                                    <div id="loader" class="hidden">Отправляем...</div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="cubock">
@@ -245,7 +269,7 @@
                 <div class="authof__design-polosa"></div>
                 <p class="authof__design-name">© Powered by Svyatoslav, 2022</p>
             </div>
-        
     </footer>
+    <script src="./scripte/script.js"></script>
 </body>
 </html>
